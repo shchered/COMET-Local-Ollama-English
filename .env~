@@ -1,0 +1,42 @@
+LLM_PROVIDER=ollama
+
+TEXT_API_KEY="ollama"
+TEXT_BASE_URL="http://localhost:11434/v1"
+VISION_API_KEY="ollama"
+VISION_BASE_URL="http://localhost:11434/v1"
+IMAGE_GEN_API_KEY="ollama"
+IMAGE_GEN_BASE_URL="http://localhost:11434/v1"
+IMAGE_GEN_BACKEND="zimage"
+DEEPL_API_KEY=""
+DEEPSEEK_API_KEY="ollama"
+DEEPSEEK_BASE_URL="http://localhost:11434/v1"
+
+OLLAMA_BASE_URL=http://localhost:11434
+
+# Language settings
+OUTPUT_LANGUAGE=en
+RUBRIC_LANGUAGE=en
+TRANSLATION_PROVIDER=none
+
+# Text-only tasks (JSON, rubrics, structured outputs)
+TEXT_MODEL=richardyoung/qwen3.6-27b-code-abliterated:Q8_0
+ADVERSARIAL_MODEL = qwen2.5vl:72b-q8_0
+# Vision tasks (image analysis, multimodal)
+VISION_MODEL=qwen2.5vl:72b-q8_0
+
+# Judging/evaluation (needs strong reasoning capabilities)
+JUDGE_MODEL=qwen2.5vl:72b-q8_0
+
+# Transmuter pipeline
+TRANSMUTER_PRIMARY_MODEL=qwen2.5vl:72b-q8_0
+TRANSMUTER_FALLBACK_MODEL=huihui_ai/qwen3-vl-abliterated:30b-a3b-instruct-q8_0
+
+# Generation params
+TEMPERATURE=0.7
+TOP_P=0.9
+MAX_TOKENS=4096
+
+# OpenAI-compatible fallback for local Ollama
+OPENAI_API_KEY=ollama
+OPENAI_BASE_URL=http://localhost:11434/v1
+EXPORT_RESULTS_DIR="./logs/attack_runs/"

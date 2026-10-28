@@ -1,0 +1,6 @@
+.env.bak*
+*.bak*
+logs/
+__pycache__/
+*.pyc
+data/benign_goals.txt

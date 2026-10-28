@@ -1,0 +1,3 @@
+FROM huihui_ai/qwen3-vl-abliterated:30b-a3b-instruct-q8_0
+PARAMETER num_ctx 8192
+
